@@ -1,10 +1,11 @@
 const express = require('express')
+const cors = require('cors')
 const routes = require('./routes')
 const app = express()
 
 // Node puro
 // const http = require('http');
-
+app.use(cors())
 app.use(express.json())
 
 // let notes = [
